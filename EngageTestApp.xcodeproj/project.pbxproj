@@ -7,13 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD3E88A81FCCCFF0003C90CA /* ATM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3E88A71FCCCFF0003C90CA /* ATM.swift */; };
+		DD3E88AA1FCCD092003C90CA /* ATMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3E88A91FCCD092003C90CA /* ATMViewController.swift */; };
+		DD3E88AC1FCCD65C003C90CA /* ATMCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3E88AB1FCCD65C003C90CA /* ATMCollectionView.swift */; };
 		DD5252C91FCB42A400DC7C46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5252C81FCB42A400DC7C46 /* AppDelegate.swift */; };
-		DD5252CB1FCB42A400DC7C46 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5252CA1FCB42A400DC7C46 /* ViewController.swift */; };
-		DD5252CE1FCB42A400DC7C46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD5252CC1FCB42A400DC7C46 /* Main.storyboard */; };
 		DD5252D11FCB42A400DC7C46 /* EngageTestApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD5252CF1FCB42A400DC7C46 /* EngageTestApp.xcdatamodeld */; };
 		DD5252D31FCB42A400DC7C46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD5252D21FCB42A400DC7C46 /* Assets.xcassets */; };
-		DD5252D61FCB42A400DC7C46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD5252D41FCB42A400DC7C46 /* LaunchScreen.storyboard */; };
 		DD5252E11FCB42A400DC7C46 /* EngageTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5252E01FCB42A400DC7C46 /* EngageTestAppTests.swift */; };
+		DD5252F21FCB447500DC7C46 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5252F11FCB447500DC7C46 /* LoginViewController.swift */; };
+		DD5252F41FCB914600DC7C46 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD5252F31FCB914600DC7C46 /* Default-568h@2x.png */; };
+		DD5252F61FCB997600DC7C46 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5252F51FCB997600DC7C46 /* SplashView.swift */; };
+		DD5252F81FCB99A500DC7C46 /* AssistanceTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5252F71FCB99A500DC7C46 /* AssistanceTableView.swift */; };
+		DD5252FA1FCB9B0C00DC7C46 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5252F91FCB9B0C00DC7C46 /* Colors.swift */; };
+		DD5252FC1FCBA05400DC7C46 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5252FB1FCBA05400DC7C46 /* InputView.swift */; };
+		DD5252FE1FCBDCE800DC7C46 /* StyleKitEngage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5252FD1FCBDCE800DC7C46 /* StyleKitEngage.swift */; };
+		DD5253001FCBFFAB00DC7C46 /* AssistanceNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5252FF1FCBFFAB00DC7C46 /* AssistanceNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,17 +35,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD3E88A71FCCCFF0003C90CA /* ATM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATM.swift; sourceTree = "<group>"; };
+		DD3E88A91FCCD092003C90CA /* ATMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATMViewController.swift; sourceTree = "<group>"; };
+		DD3E88AB1FCCD65C003C90CA /* ATMCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATMCollectionView.swift; sourceTree = "<group>"; };
 		DD5252C51FCB42A400DC7C46 /* EngageTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EngageTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD5252C81FCB42A400DC7C46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DD5252CA1FCB42A400DC7C46 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DD5252CD1FCB42A400DC7C46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD5252D01FCB42A400DC7C46 /* EngageTestApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EngageTestApp.xcdatamodel; sourceTree = "<group>"; };
 		DD5252D21FCB42A400DC7C46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DD5252D51FCB42A400DC7C46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD5252D71FCB42A400DC7C46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD5252DC1FCB42A400DC7C46 /* EngageTestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EngageTestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD5252E01FCB42A400DC7C46 /* EngageTestAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngageTestAppTests.swift; sourceTree = "<group>"; };
 		DD5252E21FCB42A400DC7C46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD5252F11FCB447500DC7C46 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DD5252F31FCB914600DC7C46 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		DD5252F51FCB997600DC7C46 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		DD5252F71FCB99A500DC7C46 /* AssistanceTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistanceTableView.swift; sourceTree = "<group>"; };
+		DD5252F91FCB9B0C00DC7C46 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		DD5252FB1FCBA05400DC7C46 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		DD5252FD1FCBDCE800DC7C46 /* StyleKitEngage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StyleKitEngage.swift; path = ../../../StyleKitEngage.swift; sourceTree = "<group>"; };
+		DD5252FF1FCBFFAB00DC7C46 /* AssistanceNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistanceNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +74,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD3E88A31FCCCD88003C90CA /* ATM */ = {
+			isa = PBXGroup;
+			children = (
+				DD3E88A41FCCCD9D003C90CA /* Models */,
+				DD3E88A51FCCCDA2003C90CA /* Views */,
+				DD3E88A61FCCCEF3003C90CA /* View Controllers */,
+			);
+			path = ATM;
+			sourceTree = "<group>";
+		};
+		DD3E88A41FCCCD9D003C90CA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DD3E88A71FCCCFF0003C90CA /* ATM.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DD3E88A51FCCCDA2003C90CA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DD3E88AB1FCCD65C003C90CA /* ATMCollectionView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DD3E88A61FCCCEF3003C90CA /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DD3E88A91FCCD092003C90CA /* ATMViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
 		DD5252BC1FCB42A400DC7C46 = {
 			isa = PBXGroup;
 			children = (
@@ -79,13 +129,10 @@
 		DD5252C71FCB42A400DC7C46 /* EngageTestApp */ = {
 			isa = PBXGroup;
 			children = (
-				DD5252C81FCB42A400DC7C46 /* AppDelegate.swift */,
-				DD5252CA1FCB42A400DC7C46 /* ViewController.swift */,
-				DD5252CC1FCB42A400DC7C46 /* Main.storyboard */,
-				DD5252D21FCB42A400DC7C46 /* Assets.xcassets */,
-				DD5252D41FCB42A400DC7C46 /* LaunchScreen.storyboard */,
-				DD5252D71FCB42A400DC7C46 /* Info.plist */,
-				DD5252CF1FCB42A400DC7C46 /* EngageTestApp.xcdatamodeld */,
+				DD5252EF1FCB434400DC7C46 /* Universal */,
+				DD5252F01FCB435F00DC7C46 /* Assets */,
+				DD5252EB1FCB431300DC7C46 /* Login */,
+				DD3E88A31FCCCD88003C90CA /* ATM */,
 			);
 			path = EngageTestApp;
 			sourceTree = "<group>";
@@ -97,6 +144,63 @@
 				DD5252E21FCB42A400DC7C46 /* Info.plist */,
 			);
 			path = EngageTestAppTests;
+			sourceTree = "<group>";
+		};
+		DD5252EB1FCB431300DC7C46 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				DD5252EC1FCB431A00DC7C46 /* Models */,
+				DD5252ED1FCB431E00DC7C46 /* Views */,
+				DD5252EE1FCB432200DC7C46 /* View Controllers */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		DD5252EC1FCB431A00DC7C46 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DD5252FF1FCBFFAB00DC7C46 /* AssistanceNode.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DD5252ED1FCB431E00DC7C46 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DD5252F51FCB997600DC7C46 /* SplashView.swift */,
+				DD5252FB1FCBA05400DC7C46 /* InputView.swift */,
+				DD5252F71FCB99A500DC7C46 /* AssistanceTableView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DD5252EE1FCB432200DC7C46 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DD5252F11FCB447500DC7C46 /* LoginViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		DD5252EF1FCB434400DC7C46 /* Universal */ = {
+			isa = PBXGroup;
+			children = (
+				DD5252CF1FCB42A400DC7C46 /* EngageTestApp.xcdatamodeld */,
+				DD5252D71FCB42A400DC7C46 /* Info.plist */,
+				DD5252C81FCB42A400DC7C46 /* AppDelegate.swift */,
+				DD5252F91FCB9B0C00DC7C46 /* Colors.swift */,
+			);
+			path = Universal;
+			sourceTree = "<group>";
+		};
+		DD5252F01FCB435F00DC7C46 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				DD5252F31FCB914600DC7C46 /* Default-568h@2x.png */,
+				DD5252FD1FCBDCE800DC7C46 /* StyleKitEngage.swift */,
+				DD5252D21FCB42A400DC7C46 /* Assets.xcassets */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,9 +286,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD5252D61FCB42A400DC7C46 /* LaunchScreen.storyboard in Resources */,
 				DD5252D31FCB42A400DC7C46 /* Assets.xcassets in Resources */,
-				DD5252CE1FCB42A400DC7C46 /* Main.storyboard in Resources */,
+				DD5252F41FCB914600DC7C46 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,9 +305,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD5252F21FCB447500DC7C46 /* LoginViewController.swift in Sources */,
+				DD5252FC1FCBA05400DC7C46 /* InputView.swift in Sources */,
+				DD5253001FCBFFAB00DC7C46 /* AssistanceNode.swift in Sources */,
+				DD3E88AC1FCCD65C003C90CA /* ATMCollectionView.swift in Sources */,
+				DD5252FA1FCB9B0C00DC7C46 /* Colors.swift in Sources */,
+				DD5252F81FCB99A500DC7C46 /* AssistanceTableView.swift in Sources */,
+				DD3E88AA1FCCD092003C90CA /* ATMViewController.swift in Sources */,
+				DD5252F61FCB997600DC7C46 /* SplashView.swift in Sources */,
 				DD5252D11FCB42A400DC7C46 /* EngageTestApp.xcdatamodeld in Sources */,
-				DD5252CB1FCB42A400DC7C46 /* ViewController.swift in Sources */,
 				DD5252C91FCB42A400DC7C46 /* AppDelegate.swift in Sources */,
+				DD3E88A81FCCCFF0003C90CA /* ATM.swift in Sources */,
+				DD5252FE1FCBDCE800DC7C46 /* StyleKitEngage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,25 +337,6 @@
 			targetProxy = DD5252DD1FCB42A400DC7C46 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		DD5252CC1FCB42A400DC7C46 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DD5252CD1FCB42A400DC7C46 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		DD5252D41FCB42A400DC7C46 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DD5252D51FCB42A400DC7C46 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DD5252E31FCB42A400DC7C46 /* Debug */ = {
@@ -294,7 +387,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -345,7 +438,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -359,7 +452,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QZ688Q6N5R;
-				INFOPLIST_FILE = EngageTestApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/EngageTestApp/Universal/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = EN.EngageTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -374,7 +468,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QZ688Q6N5R;
-				INFOPLIST_FILE = EngageTestApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/EngageTestApp/Universal/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = EN.EngageTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
