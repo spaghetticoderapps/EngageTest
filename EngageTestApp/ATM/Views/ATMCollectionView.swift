@@ -10,6 +10,10 @@ import UIKit
 
 class ATMCollectionViewCell : UICollectionViewCell {
     
+    var customHeightAnchor: NSLayoutConstraint!
+    
+    
+    
     let landmark : UILabel = {
         let label = UILabel()
         label.text = "Landmark"
@@ -30,21 +34,12 @@ class ATMCollectionViewCell : UICollectionViewCell {
         return label
     }()
     
-    let plus : UILabel = {
-        let label = UILabel()
-        label.text = "+"
-        label.numberOfLines = 2
-        label.font = UIFont.systemFont(ofSize: 30, weight: UIFont.Weight.bold)
-        label.textColor = UIColor.custom.blue
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }()
-    
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupCell()
     }
+    
+    
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -61,16 +56,14 @@ extension ATMCollectionViewCell {
         layer.borderWidth = 0.5
         layer.cornerRadius = 5
         clipsToBounds = true
+        translatesAutoresizingMaskIntoConstraints = false
         
         addSubview(landmark)
-        addSubview(plus)
         addSubview(address)
         
         landmark.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 20).isActive = true
         landmark.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: -10).isActive = true
-        
-        plus.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -20).isActive = true
-        plus.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
+
         
         address.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 20).isActive = true
         address.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: 10).isActive = true
@@ -79,8 +72,14 @@ extension ATMCollectionViewCell {
     
 }
 
+
+
 class ATMCollectionView: UICollectionView {
 
+    var atms = [ATM]()
+    
+    var selectedIndexPaths = [IndexPath]()
+    
     let identifier = "ATMCollectionViewCell"
     
     let flowLayout = UICollectionViewFlowLayout()
@@ -115,11 +114,18 @@ extension ATMCollectionView {
 // MARK: - Collection View Data Source
 extension ATMCollectionView : UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
+        // usually I return the entire array but I will only return 10 in the interest of less scrolling
+//        return atms.count
         return 10
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as! ATMCollectionViewCell
+        
+        cell.landmark.text = atms[indexPath.item].landmark
+        cell.address.text = atms[indexPath.item].address
+        
         return cell
     }
     
@@ -131,8 +137,19 @@ extension ATMCollectionView : UICollectionViewDataSource {
 extension ATMCollectionView : UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let cell = cellForItem(at: indexPath) as! ATMCollectionViewCell
-        print(cell.address.text)
+        
+        
+        if !selectedIndexPaths.contains(indexPath) {
+            selectedIndexPaths.append(indexPath)
+        } else {
+            selectedIndexPaths = selectedIndexPaths.filter { $0 != indexPath }
+            
+        }
+        
+        reloadItems(at: self.selectedIndexPaths)
+
+        
+        
     }
     
 }
@@ -142,7 +159,15 @@ extension ATMCollectionView : UICollectionViewDelegate {
 extension ATMCollectionView : UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width - 16, height: 75)
+        
+        if selectedIndexPaths.contains(indexPath) {
+            return CGSize(width: collectionView.frame.width - 16, height: 150)
+        }
+        else {
+            return CGSize(width: collectionView.frame.width - 16, height: 75)
+        }
+        
+        
     }
     
 }

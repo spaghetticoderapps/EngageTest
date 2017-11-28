@@ -10,6 +10,7 @@
 		DD3E88A81FCCCFF0003C90CA /* ATM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3E88A71FCCCFF0003C90CA /* ATM.swift */; };
 		DD3E88AA1FCCD092003C90CA /* ATMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3E88A91FCCD092003C90CA /* ATMViewController.swift */; };
 		DD3E88AC1FCCD65C003C90CA /* ATMCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3E88AB1FCCD65C003C90CA /* ATMCollectionView.swift */; };
+		DD3E88AF1FCD0205003C90CA /* ATMNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3E88AE1FCD0205003C90CA /* ATMNetworking.swift */; };
 		DD5252C91FCB42A400DC7C46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5252C81FCB42A400DC7C46 /* AppDelegate.swift */; };
 		DD5252D11FCB42A400DC7C46 /* EngageTestApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD5252CF1FCB42A400DC7C46 /* EngageTestApp.xcdatamodeld */; };
 		DD5252D31FCB42A400DC7C46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD5252D21FCB42A400DC7C46 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 		DD3E88A71FCCCFF0003C90CA /* ATM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATM.swift; sourceTree = "<group>"; };
 		DD3E88A91FCCD092003C90CA /* ATMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATMViewController.swift; sourceTree = "<group>"; };
 		DD3E88AB1FCCD65C003C90CA /* ATMCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATMCollectionView.swift; sourceTree = "<group>"; };
+		DD3E88AE1FCD0205003C90CA /* ATMNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATMNetworking.swift; sourceTree = "<group>"; };
 		DD5252C51FCB42A400DC7C46 /* EngageTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EngageTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD5252C81FCB42A400DC7C46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD5252D01FCB42A400DC7C46 /* EngageTestApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EngageTestApp.xcdatamodel; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			children = (
 				DD3E88A41FCCCD9D003C90CA /* Models */,
 				DD3E88A51FCCCDA2003C90CA /* Views */,
+				DD3E88AD1FCD01EE003C90CA /* View Models */,
 				DD3E88A61FCCCEF3003C90CA /* View Controllers */,
 			);
 			path = ATM;
@@ -106,6 +109,14 @@
 				DD3E88A91FCCD092003C90CA /* ATMViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		DD3E88AD1FCD01EE003C90CA /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				DD3E88AE1FCD0205003C90CA /* ATMNetworking.swift */,
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 		DD5252BC1FCB42A400DC7C46 = {
@@ -307,6 +318,7 @@
 			files = (
 				DD5252F21FCB447500DC7C46 /* LoginViewController.swift in Sources */,
 				DD5252FC1FCBA05400DC7C46 /* InputView.swift in Sources */,
+				DD3E88AF1FCD0205003C90CA /* ATMNetworking.swift in Sources */,
 				DD5253001FCBFFAB00DC7C46 /* AssistanceNode.swift in Sources */,
 				DD3E88AC1FCCD65C003C90CA /* ATMCollectionView.swift in Sources */,
 				DD5252FA1FCB9B0C00DC7C46 /* Colors.swift in Sources */,

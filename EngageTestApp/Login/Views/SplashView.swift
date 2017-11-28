@@ -10,6 +10,8 @@ import UIKit
 
 class SplashView: UIView {
 
+    var labelYConstraint: NSLayoutConstraint!
+    
     let image : UIImageView = {
         let image = UIImageView()
         image.image = UIImage(named: "hands")
@@ -86,7 +88,8 @@ extension SplashView {
         blackLayer.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
         
         label.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
-        label.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: -37).isActive = true
+        labelYConstraint = label.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: -37)
+        labelYConstraint.isActive = true
         
         button.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
         button.topAnchor.constraint(equalTo: label.bottomAnchor, constant: 12).isActive = true

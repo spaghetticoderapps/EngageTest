@@ -8,7 +8,17 @@
 
 import Foundation
 
-class ATM {
+struct ATMList : Codable {
+    
+    var atmList: [ATM]
+    
+    init(atmList: [ATM]) {
+        self.atmList = atmList
+    }
+    
+}
+
+struct ATM : Codable {
     
     var address: String
     var landmark: String
